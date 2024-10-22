@@ -1,0 +1,112 @@
+/* Căn chỉnh thanh menu */
+.header {
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.top-header {
+    margin: 0;
+    padding: 0px 7%;
+    justify-content: space-between;
+}
+
+.container {
+    padding: 10px 0px;
+    position: fixed;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.container .menu-link {
+    text-decoration: none; /* Không hiện đường gạch chân (mặc định) đối với thẻ <a> */
+}
+
+.container .sub-menu {
+    text-decoration: none; /* Không hiện đường gạch chân (mặc định) đối với thẻ <a> trong menu */
+}
+
+.box-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .box-menu ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.fa-duotone {
+    opacity: 15%;
+}
+
+header .box-menu ul li {
+    position: relative;
+    float: left;
+}
+
+header .box-menu li a {
+    color: #333333;
+    font-size: 15px;
+    padding: 5px;
+    display: block;
+}
+
+header .box-menu li ul li a {
+    color: #858585;
+    font-size: 14px;
+    padding: px;
+    display: block;
+    margin: 12px;
+}
+
+.menu1 {
+    padding: 0px 0px 0px 45px;
+}
+.menu2 {
+    padding: 0px 30px 0px 100px;
+}
+
+header .box-menu ul li ul {
+    position: absolute;
+    padding: 0.7rem 0;
+    margin: 0.2rem -0.5rem;
+    left: 0;
+    width: 210px;
+    opacity: 0; /* Bắt đầu menu với độ trong suốt là 0 */
+    visibility: hidden; /* Ẩn menu */
+    transform: translateY(10px); /* Đẩy menu xuống dưới */
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+header .box-menu ul li ul li {
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 0.8rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .box-menu .menu1 li a:hover {
+    color: #467BCC;
+}
+
+header .box-menu .menu2 li a:hover {
+    color: #A9A9A9;
+}
+
+header .box-menu ul li:hover>ul {
+    opacity: 1; /* Hiện menu khi rê chuột */
+    visibility: visible; /* Hiện menu */
+    transform: translateY(0); /* Kéo menu về vị trí ban đầu */
+}
+
+.bottom-header img {
+    width: 100%; /* Đảm bảo hình ảnh không vượt quá kích thước khung */
+    height: auto;
+    display: block;
+    object-fit: cover;
+}

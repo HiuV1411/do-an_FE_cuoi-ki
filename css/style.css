@@ -6,24 +6,26 @@
 }
 
 .top-header {
+    position: absolute;
     margin: 0;
     padding: 0px 7%;
     justify-content: space-between;
+    z-index: 2;
 }
 
-.container {
+.container-1 {
     padding: 10px 0px;
-    position: fixed;
+    position: fixed; 
     box-sizing: border-box;
     display: flex;
     align-items: center; /* Căn giữa theo chiều dọc */
 }
 
-.container .menu-link {
+.container-1 .menu-link {
     text-decoration: none; /* Không hiện đường gạch chân (mặc định) đối với thẻ <a> */
 }
 
-.container .sub-menu {
+.container-1 .sub-menu {
     text-decoration: none; /* Không hiện đường gạch chân (mặc định) đối với thẻ <a> trong menu */
 }
 
@@ -104,9 +106,76 @@ header .box-menu ul li:hover>ul {
     transform: translateY(0); /* Kéo menu về vị trí ban đầu */
 }
 
-.bottom-header img {
-    width: 100%; /* Đảm bảo hình ảnh không vượt quá kích thước khung */
-    height: auto;
-    display: block;
-    object-fit: cover;
+/* ============================================================================= */
+.img-slider {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.img-slider .slide {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    clip-path: polygon(100% 0, 100% 0%, 100% 100%, 100% 100%);
+}
+
+.img-slider .slide.active {
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    transition: 1.7s;
+    transition-property: clip-path;
+}
+
+.img-slider .slide img {
+    z-index: 1;
+}
+
+
+.img-slider .slide .info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 220px 0px 0px 125px;
+}
+
+.img-slider .slide .info h1 {
+    font-size: 72px;
+    font-weight: 500;
+}
+
+.img-slider .slide .info p {
+    font-size: 16px;
+    color: #848484;
+    width: 55%;
+    padding: 20px 0px 0px 0px;
+}
+
+.img-slider .nav {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    bottom: -190px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 13px;
+    margin: 0px 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-slider .nav .btn {
+    background: local;
+    width: 11px;
+    height: 11px;
+    padding: 0;
+    margin: 0px 5px 0px 5px;
+    border: 2px solid #9d9c9c;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.img-slider .nav .btn.active {
+background: black;
+border: black;
 }

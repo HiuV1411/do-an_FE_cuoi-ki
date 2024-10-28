@@ -1,48 +1,42 @@
 body {
     margin: 0;
 }
-/* =================================================================================== */
-/* Thanh menu */
+
 .header {
+    position: relative;
     top: 0;
     left: 0;
-    right: 0;
+    width: 100%;
+    height: 100%;
 }
 
-.top-header {
-    position: absolute;
-    margin: 0;
-    padding: 0px 7%;
-    justify-content: space-between;
-    z-index: 2;
-}
+/* =================================================================================== */
+/* Thanh menu */
 
 .container1 {
-    padding: 10px 0px;
-    position: fixed; 
-    box-sizing: border-box;
+    width: 100%;
+    padding: 25px 0px;
+    position: fixed;
     display: flex;
-    align-items: center; /* Căn giữa theo chiều dọc */
-}
-
-.container1 .menu-link {
-    text-decoration: none; /* Không hiện đường gạch chân (mặc định) đối với thẻ <a> */
-}
-
-.container1 .sub-menu {
-    text-decoration: none; /* Không hiện đường gạch chân (mặc định) đối với thẻ <a> trong menu */
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
 }
 
 .box-menu {
     display: flex;
-    justify-content: space-between;
 }
 
-header .box-menu ul {
+.container1 .menu-link, .container1 .sub-menu {
+    text-decoration: none; /* Không hiện đường gạch chân (mặc định) đối với thẻ <a> */
+}
+
+.container1 .box-menu ul {
     list-style: none;
-    margin: 0;
     display: flex;
     align-items: center;
+    margin: 0;
     gap: 15px;
 }
 
@@ -50,38 +44,39 @@ header .box-menu ul {
     opacity: 15%;
 }
 
-header .box-menu ul li {
+.container1 .box-menu ul li {
     position: relative;
-    float: left;
 }
 
-header .box-menu li a {
-    color: #333333;
-    font-size: 15px;
+.container1 .logo img {
+    height: 33px;
+}
+
+.container1 .box-menu li a {
+    font-size: 93.75%;
     padding: 5px;
     display: block;
+    color: #333333;
 }
 
-header .box-menu li ul li a {
-    color: #858585;
-    font-size: 14px;
-    padding: px;
-    display: block;
+.container1 .box-menu li ul li a {
+    font-size: 87.5%;
     margin: 12px;
+    display: block;
+    color: #858585;
 }
 
 .menu1 {
-    padding: 0px 0px 0px 45px;
+    padding: 0px 100px 0px 45px;
 }
 .menu2 {
-    padding: 0px 30px 0px 100px;
+    padding: 0px 30px 0px 0px;
 }
 
-header .box-menu ul li ul {
+.container1 .box-menu ul li ul {
     position: absolute;
     padding: 0.7rem 0;
     margin: 0.2rem -0.5rem;
-    left: 0;
     width: 210px;
     opacity: 0; /* Bắt đầu menu với độ trong suốt là 0 */
     visibility: hidden; /* Ẩn menu */
@@ -89,22 +84,22 @@ header .box-menu ul li ul {
     transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
 }
 
-header .box-menu ul li ul li {
+.container1 .box-menu ul li ul li {
     width: 100%;
     background-color: #FFFFFF;
     border-radius: 0.8rem;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-header .box-menu .menu1 li a:hover {
+.container1 .box-menu .menu1 li a:hover {
     color: #467BCC;
 }
 
-header .box-menu .menu2 li a:hover {
+.container1 .box-menu .menu2 li a:hover {
     color: #A9A9A9;
 }
 
-header .box-menu ul li:hover>ul {
+.container1 .box-menu ul li:hover>ul {
     opacity: 1; /* Hiện menu khi rê chuột */
     visibility: visible; /* Hiện menu */
     transform: translateY(0); /* Kéo menu về vị trí ban đầu */
@@ -114,25 +109,46 @@ header .box-menu ul li:hover>ul {
 /* Slider */
 
 .container2 {
-    width: 1519px;
-    height: 700px;
-    position: relative;
     overflow: hidden;
 }
 
 .slider {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     height: 100%;
     display: flex;
     width: max-content;
     transition: 1s;
 }
 
+.slider .slide {
+    z-index: 1;
+}
+
+.slider .slide .info {
+    position: absolute;
+    width: 100%;
+    max-width: max-content;
+    top: 30%;
+    left: 2.3%;
+}
+
+.slider .slide .info h1 {
+    font-size: 72px;
+    font-weight: 500;
+    width: 55%;
+}
+
+.slider .slide .info p {
+    font-size: 16px;
+    color: #848484;
+    width: 55%;
+    padding: 15px 0px 0px 0px;
+}
+
 .slider img {
-    width: 1519px;
+    width: 100%;
     height: 100%;
+    z-index: 1;
 }
 
 .buttons {
@@ -141,6 +157,7 @@ header .box-menu ul li:hover>ul {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .buttons i {
@@ -181,6 +198,7 @@ header .box-menu ul li:hover>ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 
 .dots li {
@@ -199,22 +217,3 @@ header .box-menu ul li:hover>ul {
     background: #000000;
     border: #000000;
 }
-
-.slider .slide .info {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 220px 0px 0px 125px;
-}
-
-.slider .slide .info h1 {
-    font-size: 72px;
-    font-weight: 500;
-}
-
-.slider .slide .info p {
-    font-size: 16px;
-    color: #848484;
-    width: 55%;
-    padding: 20px 0px 0px 0px;
-}   

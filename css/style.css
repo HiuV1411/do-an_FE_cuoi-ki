@@ -1,3 +1,6 @@
+body {
+    margin: 0;
+}
 /* =================================================================================== */
 /* Thanh menu */
 .header {
@@ -14,7 +17,7 @@
     z-index: 2;
 }
 
-.container-1 {
+.container1 {
     padding: 10px 0px;
     position: fixed; 
     box-sizing: border-box;
@@ -22,11 +25,11 @@
     align-items: center; /* Căn giữa theo chiều dọc */
 }
 
-.container-1 .menu-link {
+.container1 .menu-link {
     text-decoration: none; /* Không hiện đường gạch chân (mặc định) đối với thẻ <a> */
 }
 
-.container-1 .sub-menu {
+.container1 .sub-menu {
     text-decoration: none; /* Không hiện đường gạch chân (mặc định) đối với thẻ <a> trong menu */
 }
 
@@ -109,75 +112,109 @@ header .box-menu ul li:hover>ul {
 
 /* =================================================================================== */
 /* Slider */
-.img-slider {
+
+.container2 {
+    width: 1519px;
+    height: 700px;
     position: relative;
-    width: 100%;
-    height: 500px;
+    overflow: hidden;
 }
 
-.img-slider .slide {
-    z-index: 1;
+.slider {
     position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    width: max-content;
+    transition: 1s;
+}
+
+.slider img {
+    width: 1519px;
+    height: 100%;
+}
+
+.buttons {
+    position: absolute;
+    top: 45%;
     width: 100%;
-    clip-path: polygon(100% 0, 100% 0%, 100% 100%, 100% 100%);
+    display: flex;
+    justify-content: space-between;
 }
 
-.img-slider .slide.active {
-    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
-    transition: 1.7s;
-    transition-property: clip-path;
+.buttons i {
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
-.img-slider .slide img {
-    z-index: 1;
+.buttons #prev {
+    padding: 5px;
 }
 
+.buttons #next {
+    padding: 5px;
+}
 
-.img-slider .slide .info {
+.buttons #prev .fa-chevron-left {
+    padding: 5px;
+}
+
+.buttons #next .fa-chevron-right {
+    padding: 5px 5px 5px 13px;
+}
+
+.buttons i:hover {
+    color: #767676;
+    opacity: 30%;
+}
+
+.dots {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dots li {
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background: local;
+    margin: 0px 6px;
+    border: 2px solid #9d9c9c;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.dots li.active {
+    background: #000000;
+    border: #000000;
+}
+
+.slider .slide .info {
     position: absolute;
     top: 0;
     left: 0;
     padding: 220px 0px 0px 125px;
 }
 
-.img-slider .slide .info h1 {
+.slider .slide .info h1 {
     font-size: 72px;
     font-weight: 500;
 }
 
-.img-slider .slide .info p {
+.slider .slide .info p {
     font-size: 16px;
     color: #848484;
     width: 55%;
     padding: 20px 0px 0px 0px;
-}
-
-.img-slider .nav {
-    z-index: 2;
-    position: absolute;
-    display: flex;
-    bottom: -190px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    height: 13px;
-    margin: 0px 0px;
-    align-items: center;
-    justify-content: center;
-}
-
-.img-slider .nav .btn {
-    background: local;
-    width: 11px;
-    height: 11px;
-    padding: 0;
-    margin: 0px 5px 0px 5px;
-    border: 2px solid #9d9c9c;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.img-slider .nav .btn.active {
-background: black;
-border: black;
-}
+}   

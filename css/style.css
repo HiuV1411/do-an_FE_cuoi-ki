@@ -54,9 +54,13 @@ body {
 
 .container1 .box-menu li a {
     font-size: 85.75%;
-    padding: 6px;   
+    padding: 6px;
     display: block;
     color: #333333;
+}
+
+.container1 .box-menu li a i {
+    font-size: 135%;
 }
 
 .container1 .box-menu li ul li a {

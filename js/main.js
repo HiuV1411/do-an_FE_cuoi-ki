@@ -83,3 +83,23 @@ prevbtn.addEventListener("click", () => {
     slides[slidenumber].classList.add("active");
     buttons[slidenumber].classList.add("active");
 });
+
+// Khi cuộn xuống thì thanh top-header sẽ nảy từ thanh công cụ của trình duyệt ra
+window.addEventListener('scroll', function () {
+    const header = document.querySelector('.list-item');
+    const topHeader = document.querySelector('.top-header');
+    if (window.scrollY > 50) {
+        if (!header.classList.contains('scrolled')) {
+            header.classList.add('abounce');
+            setTimeout(() => {
+                header.classList.remove('abounce');
+                header.classList.add('scrolled');
+                topHeader.style.height = '60px';
+            }, 200);
+        }
+    } else {
+        header.classList.remove('scrolled');
+        topHeader.style.height = '90px';
+        header.style.backgroundColor = '';
+    }
+});

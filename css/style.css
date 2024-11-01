@@ -131,7 +131,7 @@ ul {
 .list-item .right-menu .menu-link:hover,
 .list-item .right-menu .shopping-cart:hover .menu-price,
 .list-item .right-menu .shopping-cart:hover .menu-link {
-    color: #676767;
+    color: #858585;
     transition: color 0.3s;
 }
 

@@ -100,12 +100,26 @@ ul {
     display: flex;
     width: 338px;
     padding: 0px;
-    gap: 14px;
+    gap: 12px;
     justify-content: center;
 }
 
 .list-item .right-menu .menu-link #icon {
+    position: relative;
+    display: flex;
     font-size: 17.5px;
+}
+
+.list-item .right-menu .count {
+    position: absolute;
+    color: #fff;
+    width: 14px;
+    font-size: 9px;
+    top: -1px;
+    left: 12px;
+    background-color: rgb(46, 107, 198);
+    border-radius: 50%;
+    text-align: center;
 }
 
 .list-item .right-menu .shopping-cart {
@@ -168,12 +182,12 @@ ul {
 .hd-slider {
     position: relative;
     display: flex;
-    height: 100%;
     align-items: center;
     justify-content: center;
 }
 
 .slider {
+    position: relative;
     width: 100%;
     height: 700px;
     overflow: hidden;
@@ -199,14 +213,16 @@ ul {
     height: 100%;
     margin: 0;
     object-fit: cover;
+    z-index: 1;
 }
 
 .slider .slide .info {
     position: absolute;
-    width: 40%;
-    height: 48%;
-    margin-top: 14%;
-    margin-left: 8.65%;
+    width: 80%;
+    height: 46%;
+    top: 220px;
+    justify-content: center;
+    z-index: 3;
 }
 
 .slider .slide .info h1 {
@@ -225,7 +241,6 @@ ul {
     font-size: 13px;
     font-weight: 600;
     padding: 0 8px;
-    text-decoration: none;
 }
 
 .slider .info .SHOP {

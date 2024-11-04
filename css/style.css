@@ -10,6 +10,8 @@ ul {
     list-style: none;
 }
 
+:root {}
+
 /* =================================================================================== */
 /* header */
 
@@ -86,7 +88,8 @@ ul {
     gap: 35px;
 }
 
-.list-item .left-menu .menu-link:hover, .list-item .hd-menu .sub-menu .nav-product:hover {
+.list-item .left-menu .menu-link:hover,
+.list-item .hd-menu .sub-menu .nav-product:hover {
     color: #467BCC;
     transition: 0.3s;
 }
@@ -107,7 +110,7 @@ ul {
 .list-item .right-menu .count {
     position: absolute;
     color: #fff;
-    width: 17px;  
+    width: 17px;
     font-size: 10.5px;
     top: -4px;
     left: 13px;
@@ -213,7 +216,7 @@ ul {
     z-index: 1;
 }
 
-.slider .slide .info {
+.slider .slide .header-content {
     position: absolute;
     width: 80%;
     height: 46%;
@@ -222,25 +225,25 @@ ul {
     z-index: 3;
 }
 
-.slider .slide .info h4 {
+.slider .slide .header-content h4 {
     font-size: 72px;
     user-select: none;
 }
 
-.slider .slide .info p {
+.slider .slide .header-content p {
     font-size: 16px;
     color: #858585;
     padding: 20px 0;
     user-select: none;
 }
 
-.slider .info a {
+.slider .header-content a {
     font-size: 13px;
     font-weight: 600;
     padding: 0 8px;
 }
 
-.slider .info .SHOP {
+.slider .header-content .SHOP {
     color: #FFFFFF;
     font-weight: 700;
     margin-right: 13px;
@@ -249,7 +252,7 @@ ul {
     border-radius: 5px;
 }
 
-.slider .info .READ {
+.slider .header-content .READ {
     color: #333333;
     font-weight: 700;
     background-color: #F3F3F3;
@@ -258,7 +261,7 @@ ul {
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
 }
 
-.slider .info .READ:hover {
+.slider .header-content .READ:hover {
     background-color: #E9E9E9;
     border: 12px solid #E9E9E9;
     transition: 0.2s;
@@ -591,15 +594,47 @@ ul {
 /* ====================================================== */
 /* quality */
 
-.info-box {
-    display: flex;
+.service-quality {
     flex-direction: column;
     margin-bottom: 70px;
     text-align: center;
-    align-items: center;
     justify-content: center;
     user-select: none;
     gap: 20px;
+}
+
+/* ====================================================== */
+/* quality */
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    color: #fff;
+}
+
+.banner-title {
+    font-size: 1.5rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-outline-dark {
+    border-color: #333;
+    color: #333;
 }
 
 /* =================================================================================== */

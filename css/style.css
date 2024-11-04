@@ -90,8 +90,7 @@ ul {
     gap: 35px;
 }
 
-.list-item .left-menu .menu-link:hover,
-.list-item .hd-menu .sub-menu .nav-product:hover {
+.list-item .left-menu .menu-link:hover, .list-item .hd-menu .sub-menu .nav-product:hover {
     color: #467BCC;
     transition: 0.3s;
 }
@@ -284,8 +283,7 @@ ul {
     justify-content: space-between;
 }
 
-.fa-chevron-left,
-.fa-chevron-right {
+.fa-chevron-left, .fa-chevron-right {
     color: #565656;
     font-size: 1.75em;
     padding: 10px 15px;
@@ -293,8 +291,7 @@ ul {
     z-index: 2;
 }
 
-.fa-chevron-left:hover,
-.fa-chevron-right:hover {
+.fa-chevron-left:hover, .fa-chevron-right:hover {
     color: #808080;
     transition: 0.3s;
 }
@@ -474,11 +471,10 @@ ul {
     transform: translateY(-5px);
 }
 
-.menu-hover,
-.btn-cart {
+.menu-hover,.btn-cart {
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.01s ease, visibility 0.01s ease;
+    transition: opacity 0.2s ease, visibility 0.2s, transform 0.2s ease;
     transform: translateY(0px);
 }
 
@@ -619,10 +615,22 @@ ul {
     margin-bottom: 20px;
 }
 
+.banner .banner-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
 .banner img {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
+    height: 100%;
+    border-radius: 5%;
+}
+
+.banner img:hover {
+    transition: all 0.4s ease-out;
+    transform: scale(1.1, 1.1);
 }
 
 .banner-content {
@@ -702,7 +710,7 @@ ul {
 .button-nav-row-two .button-right {
     color: #fff;
     height: 42px;
-    padding: 12px 21px;
+    padding: 12.5px 21px;
     font-size: 12.5px;
     font-weight: 650;
     text-transform: uppercase;
@@ -719,6 +727,42 @@ ul {
     background-color: #2A61B4;
     transition: 0.3s;
 }
+
+/* ====================================================== */
+/* popular */
+
+.popular-products {
+    margin-top: 50px;
+}
+
+.most-popular-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 1px;
+}
+
+.most-popular-products .sub-title {
+    color: rgb(46, 107, 198);
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.most-popular-products .title-container {
+    color: #242424;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.most-popular-products .sub_title-after-sub_title {
+    color: #787878;    
+    font-size: 16px;
+}
+
 
 /* =================================================================================== */
 /* footer */

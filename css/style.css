@@ -10,7 +10,9 @@ ul {
     list-style: none;
 }
 
-:root {}
+:root {
+    --color-light: #fff;
+}
 
 /* =================================================================================== */
 /* header */
@@ -259,6 +261,12 @@ ul {
     border: 12px solid #F3F3F3;
     border-radius: 5px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+}
+
+.slider .header-content .SHOP:hover {
+    background-color: #2A61B4;
+    border: 12px solid #2A61B4;
+    transition: 0.2s;
 }
 
 .slider .header-content .READ:hover {
@@ -608,6 +616,7 @@ ul {
 
 .banner {
     position: relative;
+    margin-bottom: 20px;
 }
 
 .banner img {
@@ -618,23 +627,97 @@ ul {
 
 .banner-content {
     position: absolute;
-    top: 50px;
-    left: 20px;
-    color: #fff;
+    top: 30px;
+    left: 30px;
+}
+
+.banner-subtitle {
+    color: rgb(46, 107, 198);
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .banner-title {
-    font-size: 1.5rem;
+    color: #242424;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 7px;
+    margin-bottom: 0px;
+    line-height: 1.3;
 }
 
-.btn-primary {
-    background-color: #007bff;
-    border: none;
+.button-nav-row-first {
+    margin-top: 30px;
 }
 
-.btn-outline-dark {
-    border-color: #333;
+.button-nav-row-first .button-left {
+    color: #fff;
+    height: 42px;
+    padding: 12.5px 21px;
+    font-size: 12.5px;
+    font-weight: 650;
+    text-transform: uppercase;
+    background-color: rgb(46, 107, 198);
+    border-radius: 5px;    
+}
+
+.button-nav-row-first .button-left:hover {
+    background-color: #2A61B4;
+    transition: 0.3s;
+}
+
+.button-nav-row-first .button-right:hover {
+    background-color: #E9E9E9;
+    transition: 0.3s;
+}
+
+.button-nav-row-first .button-right {
     color: #333;
+    height: 42px;
+    padding: 10px 24px;
+    font-size: 12.5px;
+    font-weight: 650;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid #E9E9E9;
+    border-radius: 5px;   
+}
+
+.button-nav-row-two {
+    margin-top: 25px;
+}
+
+.button-nav-row-two .button-left {
+    color: #333;
+    height: 42px;
+    padding: 11px 22px;
+    font-size: 12.5px;
+    font-weight: 650;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid #E9E9E9;
+    border-radius: 5px;   
+}
+
+.button-nav-row-two .button-right {
+    color: #fff;
+    height: 42px;
+    padding: 12px 21px;
+    font-size: 12.5px;
+    font-weight: 650;
+    text-transform: uppercase;
+    background-color: rgb(46, 107, 198);
+    border-radius: 5px;
+}
+
+.button-nav-row-two .button-left:hover {
+    background-color: #E9E9E9;
+    transition: 0.3s;
+}
+
+.button-nav-row-two .button-right:hover {
+    background-color: #2A61B4;
+    transition: 0.3s;
 }
 
 /* =================================================================================== */

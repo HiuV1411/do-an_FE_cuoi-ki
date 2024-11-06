@@ -1,807 +1,571 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/all.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Woodmart</title>
   </head>
 
   <body>
     <!-- Begin header -->
     <header class="header">
-      <div class="top-header">
-        <div class="list-item">
-          <div class="hd-logo">
-            <a href=""
-              ><img
-                src="./img/wood-logo-dark.svg"
-                alt="woodmart-hd-logo"
-                style="max-width: 180px"
-            /></a>
-          </div>
-          <div class="hd-menu">
-            <ul class="menu left-menu">
-              <li class="menu-item">
-                <a href="" class="menu-link"
-                  >Cases <i class="fa-duotone fa-solid fa-angle-down"></i
-                ></a>
-                <ul class="sub-menu">
-                  <li>
-                    <a href="" class="nav-product">IPhone 13</a>
-                    <a href="" class="nav-product">IPhone 12 pro</a>
-                    <a href="" class="nav-product">IPhone 12</a>
-                    <a href="" class="nav-product">IPhone 11 pro</a>
-                    <a href="" class="nav-product">IPhone 11</a>
-                    <a href="" class="nav-product">IPhone SE</a>
-                    <a href="" class="nav-product">IPhone XR</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a href="" class="menu-link"
-                  >Straps <i class="fa-duotone fa-solid fa-angle-down"></i
-                ></a>
-                <ul class="sub-menu">
-                  <li>
-                    <a href="" class="nav-product">Canvas</a>
-                    <a href="" class="nav-product">Leather</a>
-                    <a href="" class="nav-product">Limited series</a>
-                    <a href="" class="nav-product">Metal</a>
-                    <a href="" class="nav-product">Silicone</a>
-                    <a href="" class="nav-product">Sport</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a href="" class="menu-link"
-                  >Power Banks <i class="fa-duotone fa-solid fa-angle-down"></i
-                ></a>
-                <ul class="sub-menu">
-                  <li>
-                    <a href="" class="nav-product">Battery case</a>
-                    <a href="" class="nav-product">Powerful</a>
-                    <a href="" class="nav-product">Wireless</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a href="" class="menu-link"
-                  >Cables <i class="fa-duotone fa-solid fa-angle-down"></i
-                ></a>
-                <ul class="sub-menu">
-                  <li>
-                    <a href="" class="nav-product">Lightning</a>
-                    <a href="" class="nav-product">Universal</a>
-                    <a href="" class="nav-product">USB-C</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a href="" class="menu-link"
-                  >MagSafe <i class="fa-duotone fa-solid fa-angle-down"></i
-                ></a>
-                <ul class="sub-menu">
-                  <li>
-                    <a href="" class="nav-product">MagSafe Battery</a>
-                    <a href="" class="nav-product">Wallet</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a href="" class="menu-link"
-                  >Charger <i class="fa-duotone fa-solid fa-angle-down"></i
-                ></a>
-                <ul class="sub-menu">
-                  <li>
-                    <a href="" class="nav-product">Charging pads</a>
-                    <a href="" class="nav-product">Stands & docks</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a href="" class="menu-link"
-                  >More <i class="fa-duotone fa-solid fa-angle-down"></i
-                ></a>
-                <ul class="sub-menu">
-                  <li>
-                    <a href="" class="nav-product">Shop</a>
-                    <a href="" class="nav-product">Blog</a>
-                    <a href="" class="nav-product">About Us</a>
-                    <a href="" class="nav-product">Contact Us</a>
-                    <a href="" class="nav-product">Privacy Policy</a>
-                    <a href="" class="nav-product">Shipping</a>
-                    <a href="" class="nav-product">Track Order</a>
-                    <a href="" class="nav-product">FAQs</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="menu right-menu">
-              <li class="menu-item">
-                <a href="" class="menu-link">Login / Register</a>
-              </li>
-              <li class="menu-item">
-                <a href="" class="menu-link"
-                  ><i id="icon" class="fa-solid fa-magnifying-glass"></i
-                ></a>
-              </li>
-              <li class="menu-item">
-                <a href="" class="menu-link"
-                  ><i id="icon" class="fa-solid fa-shuffle"></i
-                  ><span class="count">0</span></a
-                >
-              </li>
-              <li class="menu-item">
-                <a href="" class="menu-link"
-                  ><i id="icon" class="fa-regular fa-heart"></i
-                  ><span class="count">0</span></a
-                >
-              </li>
-              <li class="menu-item">
-                <div class="shopping-cart">
-                  <a href="" class="menu-link"
-                    ><i id="icon" class="fa-solid fa-cart-shopping"></i
-                    ><span class="count">0</span></a
-                  >
-                  <a href="">
-                    <div class="menu-price"><span>$</span>0.00</div>
-                  </a>
+        <div class="top-header">
+            <div class="list-item">
+                <div class="hd-logo">
+                    <a href=""><img src="./img/wood-logo-dark.svg" alt="woodmart-hd-logo" style="max-width: 180px;"></a>
                 </div>
-              </li>
-            </ul>
-          </div>
+                <div class="hd-menu">
+                    <ul class="menu left-menu">
+                        <li class="menu-item"><a href="" class="menu-link">Cases
+                                <i class="fa-duotone fa-solid fa-angle-down"></i></a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="" class="nav-product">IPhone 13</a>
+                                    <a href="" class="nav-product">IPhone 12 pro</a>
+                                    <a href="" class="nav-product">IPhone 12</a>
+                                    <a href="" class="nav-product">IPhone 11 pro</a>
+                                    <a href="" class="nav-product">IPhone 11</a>
+                                    <a href="" class="nav-product">IPhone SE</a>
+                                    <a href="" class="nav-product">IPhone XR</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="" class="menu-link">Straps <i
+                                    class="fa-duotone fa-solid fa-angle-down"></i></a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="" class="nav-product">Canvas</a>
+                                    <a href="" class="nav-product">Leather</a>
+                                    <a href="" class="nav-product">Limited series</a>
+                                    <a href="" class="nav-product">Metal</a>
+                                    <a href="" class="nav-product">Silicone</a>
+                                    <a href="" class="nav-product">Sport</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="" class="menu-link">Power Banks <i
+                                    class="fa-duotone fa-solid fa-angle-down"></i></a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="" class="nav-product">Battery case</a>
+                                    <a href="" class="nav-product">Powerful</a>
+                                    <a href="" class="nav-product">Wireless</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="" class="menu-link">Cables <i
+                                    class="fa-duotone fa-solid fa-angle-down"></i></a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="" class="nav-product">Lightning</a>
+                                    <a href="" class="nav-product">Universal</a>
+                                    <a href="" class="nav-product">USB-C</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="" class="menu-link">MagSafe <i
+                                    class="fa-duotone fa-solid fa-angle-down"></i></a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="" class="nav-product">MagSafe Battery</a>
+                                    <a href="" class="nav-product">Wallet</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="" class="menu-link">Charger <i
+                                    class="fa-duotone fa-solid fa-angle-down"></i></a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="" class="nav-product">Charging pads</a>
+                                    <a href="" class="nav-product">Stands & docks</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="" class="menu-link">More <i
+                                    class="fa-duotone fa-solid fa-angle-down"></i></a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="" class="nav-product">Shop</a>
+                                    <a href="" class="nav-product">Blog</a>
+                                    <a href="" class="nav-product">About Us</a>
+                                    <a href="" class="nav-product">Contact Us</a>
+                                    <a href="" class="nav-product">Privacy Policy</a>
+                                    <a href="" class="nav-product">Shipping</a>
+                                    <a href="" class="nav-product">Track Order</a>
+                                    <a href="" class="nav-product">FAQs</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="menu right-menu">
+                        <li class="menu-item"><a href="" class="menu-link">Login / Register</a></li>
+                        <li class="menu-item"><a href="" class="menu-link"><i id="icon"
+                                    class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <li class="menu-item"><a href="" class="menu-link"><i id="icon"
+                                    class="fa-solid fa-shuffle"></i><span class="count">0</span></a></li>
+                        <li class="menu-item"><a href="" class="menu-link"><i id="icon"
+                                    class="fa-regular fa-heart"></i><span class="count">0</span></a></li>
+                        <li class="menu-item">
+                            <div class="shopping-cart">
+                                <a href="" class="menu-link"><i id="icon" class="fa-solid fa-cart-shopping"></i><span
+                                        class="count">0</span></a>
+                                <a href="">
+                                    <div class="menu-price"><span>$</span>0.00</div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="bottom-header">
-        <div class="hd-slider">
-          <div class="slider">
-            <div class="slide active">
-              <img id="slide-1" src="./img/pic1.png" alt="pic1" />
-              <div class="container">
-                <div class="row">
-                  <div class="info">
-                    <h4>Charge Your<br />Phone Safely!</h4>
-                    <p>
-                      A wonderful Serenity has possession of my entire soul,
-                      like these<br />sweel mornings of spring which I enjoy
-                      with my whole heart.
-                    </p>
-                    <a href="#" class="SHOP">TO SHOP</a>
-                    <a href="#" class="READ">READ MORE</a>
-                  </div>
+        <div class="bottom-header">
+            <div class="hd-slider">
+                <div class="slider">
+                    <div class="slide active">
+                        <img id="slide-1" src="./img/pic1.png" alt="pic1">
+                        <div class="container">
+                            <div class="row">
+                                <div class="info">
+                                    <h4>Charge Your<br>Phone Safely!</h4>
+                                    <p>A wonderful Serenity has possession of my entire soul, like these<br>sweel
+                                        mornings of
+                                        spring which I enjoy with my whole heart.</p>
+                                    <a href="#" class="SHOP">TO SHOP</a>
+                                    <a href="#" class="READ">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img id="slide-2" src="./img/pic2.png" alt="pic1">
+                        <div class="container">
+                            <div class="row">
+                                <div class="info">
+                                    <h4>For Everything<br>and Everyone</h4>
+                                    <p>Even if your less into design and more into content strategy you may<br>find some
+                                        redeeming value with, wait for it, dummy coppy</p>
+                                    <a href="#" class="SHOP">TO SHOP</a>
+                                    <a href="#" class="READ">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img id="slide-3" src="./img/pic3.png" alt="pic1">
+                        <div class="container">
+                            <div class="row">
+                                <div class="info">
+                                    <h4>Featured<br>Accessories</h4>
+                                    <p>A client that's unhappy for a reason is a problem, a client that's<br>unhappy
+                                        though
+                                        required he or her can't quite put a finger.</p>
+                                    <a href="#" class="SHOP">TO SHOP</a>
+                                    <a href="#" class="READ">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="slide">
-              <img id="slide-2" src="./img/pic2.png" alt="pic1" />
-              <div class="container">
-                <div class="row">
-                  <div class="info">
-                    <h4>For Everything<br />and Everyone</h4>
-                    <p>
-                      Even if your less into design and more into content
-                      strategy you may<br />find some redeeming value with, wait
-                      for it, dummy coppy
-                    </p>
-                    <a href="#" class="SHOP">TO SHOP</a>
-                    <a href="#" class="READ">READ MORE</a>
-                  </div>
+                <div class="slide-navigation">
+                    <i class="fa-solid fa-chevron-left"></i>
+                    <i class="fa-solid fa-chevron-right"></i>
                 </div>
-              </div>
-            </div>
-            <div class="slide">
-              <img id="slide-3" src="./img/pic3.png" alt="pic1" />
-              <div class="container">
-                <div class="row">
-                  <div class="info">
-                    <h4>Featured<br />Accessories</h4>
-                    <p>
-                      A client that's unhappy for a reason is a problem, a
-                      client that's<br />unhappy though required he or her can't
-                      quite put a finger.
-                    </p>
-                    <a href="#" class="SHOP">TO SHOP</a>
-                    <a href="#" class="READ">READ MORE</a>
-                  </div>
+                <div class="buttons">
+                    <div class="btn active"></div>
+                    <div class="btn"></div>
+                    <div class="btn"></div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="slide-navigation">
-            <i class="fa-solid fa-chevron-left"></i>
-            <i class="fa-solid fa-chevron-right"></i>
-          </div>
-          <div class="buttons">
-            <div class="btn active"></div>
-            <div class="btn"></div>
-            <div class="btn"></div>
-          </div>
         </div>
-      </div>
     </header>
     <!-- End header -->
     <!-- Begin wrapper -->
     <div class="wrapper">
-      <!-- Begin category -->
-      <section class="category">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-2">
-              <div class="categories">
-                <div class="category-item">
-                  <a href=""
-                    ><img
-                      src="./img/category-1.jpg.webp"
-                      alt=""
-                      class="category-img"
-                  /></a>
+        <!-- Begin category -->
+        <section class="category">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="categories">
+                            <div class="category-item">
+                                <a href=""><img src="./img/category-1.jpg.webp" alt="" class="category-img"></a>
+                            </div>
+                            <div class="category-content">
+                                <a href="">
+                                    <h3 class="category-name">Cases</h3>
+                                    <span class="category-quantity">51 product</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="categories">
+                            <div class="category-item">
+                                <a href=""><img src="./img/category-2.jpg.webp" alt="" class="category-img"></a>
+                            </div>
+                            <div class="category-content">
+                                <a href="">
+                                    <h3 class="category-name">MagSafe</h3>
+                                    <span class="category-quantity">15 product</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="categories">
+                            <div class="category-item">
+                                <a href=""><img src="./img/category-3.jpg.webp" alt="" class="category-img"></a>
+                            </div>
+                            <div class="category-content">
+                                <a href="">
+                                    <h3 class="category-name">Cables</h3>
+                                    <span class="category-quantity">18 product</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="categories">
+                            <div class="category-item">
+                                <a href=""><img src="./img/category-4.jpg.webp" alt="" class="category-img"></a>
+                            </div>
+                            <div class="category-content">
+                                <a href="">
+                                    <h3 class="category-name">Charger</h3>
+                                    <span class="category-quantity">12 product</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="categories">
+                            <div class="category-item">
+                                <a href=""><img src="./img/category-5.jpg.webp" alt="" class="category-img"></a>
+                            </div>
+                            <div class="category-content">
+                                <a href="">
+                                    <h3 class="category-name">Straps</h3>
+                                    <span class="category-quantity">38 product</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="categories">
+                            <div class="category-item">
+                                <a href=""><img src="./img/category-6.jpg.webp" alt="" class="category-img"></a>
+                            </div>
+                            <div class="category-content">
+                                <a href="">
+                                    <h3 class="category-name">Power Banks</h3>
+                                    <span class="category-quantity">18 product</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="category-content">
-                  <a href="">
-                    <h3 class="category-name">Cases</h3>
-                    <span class="category-quantity">51 product</span>
-                  </a>
-                </div>
-              </div>
             </div>
-            <div class="col-md-2">
-              <div class="categories">
-                <div class="category-item">
-                  <a href=""
-                    ><img
-                      src="./img/category-2.jpg.webp"
-                      alt=""
-                      class="category-img"
-                  /></a>
+        </section>
+        <!-- end-category -->
+        <!-- Begin new-product -->
+        <section class="new-product">
+            <div class="container">
+                <div class="row">
+                    <div class="arrivals">
+                        <div class="sub-title">Hurry up to buy</div>
+                        <h4 class="title-container">New Arrivals</h4>
+                        <div class="sub_title-after-sub_title">How can you evaluate content without design</div>
+                        <ul>
+                            <li><a href="">Cases</a></li>
+                            <li><a href="">Straps</a></li>
+                            <li><a href="">Magsafe</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="category-content">
-                  <a href="">
-                    <h3 class="category-name">MagSafe</h3>
-                    <span class="category-quantity">15 product</span>
-                  </a>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="product-item">
+                            <div class="product-hover">
+                                <a href=""><img class="product-img" src="./img/iPhone-12-Pro-Moment-Case-Blue.jpg.webp"
+                                        alt="iPhone 12 Pro Moment Case-Blue"></a>
+                                <ul class="menu-hover">
+                                    <li class="menu-item"><a href="" class="menu-link"><i
+                                                class="fa-solid fa-shuffle"></i></a></li>
+                                    <li class="menu-item"><a href="" class="menu-link"><i
+                                                class="fa-solid fa-magnifying-glass"></i></a></li>
+                                    <li class="menu-item"><a href="" class="menu-link"><i
+                                                class="fa-regular fa-heart"></i></a></li>
+                                </ul>
+                                <a href="">
+                                    <div class="btn-cart">Add to Cart</div>
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name"><a href="">iPhone 12 Pro Moment Case – Blue</a></h3>
+                                <span class="product-category"><a href="">IPhone 12 pro</a></span>
+                                <span class="product-price">$149.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-item">
+                            <div class="product-hover">
+                                <a href="">
+                                    <img class="product-img" src="./img/Full-Aquarelle-iPhone-XR.jpg.webp"
+                                        alt="Full Aquarelle iPhone XR">
+                                </a>
+                                <ul class="menu-hover">
+                                    <li class="menu-item"><a href="" class="menu-link"><i
+                                                class="fa-solid fa-shuffle"></i></a></li>
+                                    <li class="menu-item"><a href="" class="menu-link"><i
+                                                class="fa-solid fa-magnifying-glass"></i></a></li>
+                                    <li class="menu-item"><a href="" class="menu-link"><i
+                                                class="fa-regular fa-heart"></i></a></li>
+                                </ul>
+                                <a href="">
+                                    <div class="btn-cart">Add to Cart</div>
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name"><a href="">Full Aquarelle iPhone XR</a></h3>
+                                <span class="product-category"><a href="">IPhone XR</a></span>
+                                <span class="product-price">$169.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-item">
+                            <div class="product-hover">
+                                <a href="">
+                                    <img class="product-img" src="./img/Leather-Case-iPhone-12-Deep-Violet.jpg.webp"
+                                        alt="Leather Case iPhone 12 Deep Violet">
+                                </a>
+                                <ul class="menu-hover">
+                                    <li class="menu-item"><a href="" class="menu-link"><i
+                                                class="fa-solid fa-shuffle"></i></a></li>
+                                    <li class="menu-item"><a href="" class="menu-link"><i
+                                                class="fa-solid fa-magnifying-glass"></i></a></li>
+                                    <li class="menu-item"><a href="" class="menu-link"><i
+                                                class="fa-regular fa-heart"></i></a></li>
+                                </ul>
+                                <a href="">
+                                    <div class="btn-cart">Add to Cart</div>
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name"><a href="">Leather Case iPhone 12 Deep Violet</a></h3>
+                                <span class="product-category"><a href="">IPhone 12</a></span>
+                                <span class="product-price">$230.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-item">
+                            <div class="product-hover">
+                                <a href="">
+                                    <img class="product-img" src="./img/iPhone-13-Case-Luxe-Dusty-Pink.jpg.webp"
+                                        alt="iPhone 13 Case Luxe-Dusty Pink">
+                                </a>
+                                <ul class="menu-hover">
+                                    <li class="menu-item"><a href="" class="menu-link"><i
+                                                class="fa-solid fa-shuffle"></i></a></li>
+                                    <li class="menu-item"><a href="" class="menu-link"><i
+                                                class="fa-solid fa-magnifying-glass"></i></a></li>
+                                    <li class="menu-item"><a href="" class="menu-link"><i
+                                                class="fa-regular fa-heart"></i></a></li>
+                                </ul>
+                                <a href="">
+                                    <div class="btn-cart">Add to Cart</div>
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name"><a href="">iPhone 13 Case Luxe – Dusty Pink</a></h3>
+                                <span class="product-category"><a href="">IPhone 13</a></span>
+                                <span class="product-price">$149.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-item">
+                            <div class="product-hover">
+                                <a href="">
+                                    <img class="product-img" src="./img/iPhone-13-Case-Max-Black.jpg.webp"
+                                        alt="iPhone 13 Case Max-Black">
+                                </a>
+                                <ul class="menu-hover">
+                                    <li class="menu-item"><a href="" class="menu-link"><i
+                                                class="fa-solid fa-shuffle"></i></a></li>
+                                    <li class="menu-item"><a href="" class="menu-link"><i
+                                                class="fa-solid fa-magnifying-glass"></i></a></li>
+                                    <li class="menu-item"><a href="" class="menu-link"><i
+                                                class="fa-regular fa-heart"></i></a></li>
+                                </ul>
+                                <a href="">
+                                    <div class="btn-cart">Add to Cart</div>
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name"><a href="">iPhone 13 Case Max – Black</a></h3>
+                                <span class="product-category"><a href="">IPhone 13</a></span>
+                                <span class="product-price">$159.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-item">
+                            <div class="product-hover">
+                                <a href="">
+                                    <img class="product-img" src="./img/iPhone-13-Case-With-MagSafe-Red-Rose.jpg.webp"
+                                        alt="iPhone 13 Case With MagSafe-Red Rose">
+                                </a>
+                                <ul class="menu-hover">
+                                    <li class="menu-item"><a href="" class="menu-link"><i
+                                                class="fa-solid fa-shuffle"></i></a></li>
+                                    <li class="menu-item"><a href="" class="menu-link"><i
+                                                class="fa-solid fa-magnifying-glass"></i></a></li>
+                                    <li class="menu-item"><a href="" class="menu-link"><i
+                                                class="fa-regular fa-heart"></i></a></li>
+                                </ul>
+                                <a href="">
+                                    <div class="btn-cart">Add to Cart</div>
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name"><a href="">iPhone 13 Case With MagSafe – Red Rose</a></h3>
+                                <span class="product-category"><a href="">IPhone 13</a></span>
+                                <span class="product-price">$199.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-item">
+                            <div class="product-hover">
+                                <a href="">
+                                    <img class="product-img" src="./img/Epik-Silicone-Case-Full-Lavender.jpg.webp"
+                                        alt="Epik Silicone Case Full-Lavender">
+                                </a>
+                                <ul class="menu-hover">
+                                    <li class="menu-item"><a href="" class="menu-link"><i
+                                                class="fa-solid fa-shuffle"></i></a></li>
+                                    <li class="menu-item"><a href="" class="menu-link"><i
+                                                class="fa-solid fa-magnifying-glass"></i></a></li>
+                                    <li class="menu-item"><a href="" class="menu-link"><i
+                                                class="fa-regular fa-heart"></i></a></li>
+                                </ul>
+                                <a href="">
+                                    <div class="btn-cart">Add to Cart</div>
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name"><a href="">Epik Silicone Case Full – Lavender</a></h3>
+                                <span class="product-category"><a href="">IPhone 12</a></span>
+                                <span class="product-price">$99.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-item">
+                            <div class="product-hover">
+                                <a href="">
+                                    <img class="product-img" src="./img/iPhone-12-Pro-Max-Silicone-BlackWhite.jpg.webp"
+                                        alt="iPhone 12 Pro Max Silicone-Black/White">
+                                </a>
+                                <ul class="menu-hover">
+                                    <li class="menu-item"><a href="" class="menu-link"><i
+                                                class="fa-solid fa-shuffle"></i></a></li>
+                                    <li class="menu-item"><a href="" class="menu-link"><i
+                                                class="fa-solid fa-magnifying-glass"></i></a></li>
+                                    <li class="menu-item"><a href="" class="menu-link"><i
+                                                class="fa-regular fa-heart"></i></a></li>
+                                </ul>
+                                <a href="">
+                                    <div class="btn-cart">Add to Cart</div>
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name"><a href="">iPhone 12 Pro Max Silicone – Black/White</a></h3>
+                                <span class="product-category"><a href="">IPhone 12 pro</a></span>
+                                <span class="product-price">$99.00</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="col-md-2">
-              <div class="categories">
-                <div class="category-item">
-                  <a href=""
-                    ><img
-                      src="./img/category-3.jpg.webp"
-                      alt=""
-                      class="category-img"
-                  /></a>
+        </section>
+        <!-- End new-product -->
+        <!-- Begin quality -->
+        <section class="quality">
+            <div class="container">
+                <div class="row">
+                    <div class="factors">
+                        <div class="provide-high-quality">
+                            <div class="sub-title">There are some redeeming factors</div>
+                            <h4 class="title-container">We Provide High Quality Goods</h4>
+                            <div class="sub_title-after-sub_title">A client that's unhappy for a reason is a problem, a
+                                client that's unhappy though he or her can't</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="category-content">
-                  <a href="">
-                    <h3 class="category-name">Cables</h3>
-                    <span class="category-quantity">18 product</span>
-                  </a>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="info-box">
+                            <div class="box-info-wrapper">
+                                <div class="box-icon"><img class="info-svg-wrapper" src="./img/infobox-1.svg"
+                                        alt="infobox-1">
+                                </div>
+                            </div>
+                            <div class="box-info-content">
+                                <h4 class="info-box-title">Fast Delivery</h4>
+                                <div class="title-after-title">
+                                    <p style="color: #858585; font-size: 15px; font-weight: 450;">Chances are there
+                                        wasn't collaboration and checkpoints, there wasn't a process.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="info-box">
+                            <div class="box-info-wrapper">
+                                <div class="box-icon"><img class="info-svg-wrapper" src="./img/infobox-2.svg"
+                                        alt="infobox-1">
+                                </div>
+                            </div>
+                            <div class="box-info-content">
+                                <h4 class="info-box-title">Best Quality</h4>
+                                <div class="title-after-title">
+                                    <p style="color: #858585; font-size: 15px; font-weight: 450;">It's content strategy
+                                        gone awry right from the start. Forswearing the use of Lorem Ipsum.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="info-box">
+                            <div class="box-info-wrapper">
+                                <div class="box-icon"><img class="info-svg-wrapper" src="./img/infobox-3.svg"
+                                        alt="infobox-1">
+                                </div>
+                            </div>
+                            <div class="box-info-content">
+                                <h4 class="info-box-title">Free Return</h4>
+                                <div class="title-after-title">
+                                    <p style="color: #858585; font-size: 15px; font-weight: 450;">True enough, but
+                                        that's not all that it takes to get things back on track out there for a text.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="col-md-2">
-              <div class="categories">
-                <div class="category-item">
-                  <a href=""
-                    ><img
-                      src="./img/category-4.jpg.webp"
-                      alt=""
-                      class="category-img"
-                  /></a>
-                </div>
-                <div class="category-content">
-                  <a href="">
-                    <h3 class="category-name">Charger</h3>
-                    <span class="category-quantity">12 product</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-2">
-              <div class="categories">
-                <div class="category-item">
-                  <a href=""
-                    ><img
-                      src="./img/category-5.jpg.webp"
-                      alt=""
-                      class="category-img"
-                  /></a>
-                </div>
-                <div class="category-content">
-                  <a href="">
-                    <h3 class="category-name">Straps</h3>
-                    <span class="category-quantity">38 product</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-2">
-              <div class="categories">
-                <div class="category-item">
-                  <a href=""
-                    ><img
-                      src="./img/category-6.jpg.webp"
-                      alt=""
-                      class="category-img"
-                  /></a>
-                </div>
-                <div class="category-content">
-                  <a href="">
-                    <h3 class="category-name">Power Banks</h3>
-                    <span class="category-quantity">18 product</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- end-category -->
-      <!-- Begin new-product -->
-      <section class="new-product">
-        <div class="container">
-          <div class="row">
-            <div class="arrivals">
-              <div class="sub-title">Hurry up to buy</div>
-              <h4 class="title-container">New Arrivals</h4>
-              <div class="sub_title-after-sub_title">
-                How can you evaluate content without design
-              </div>
-              <ul>
-                <li><a href="">Cases</a></li>
-                <li><a href="">Straps</a></li>
-                <li><a href="">Magsafe</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-3">
-              <div class="product-item">
-                <div class="product-hover">
-                  <a href=""
-                    ><img
-                      class="product-img"
-                      src="./img/iPhone-12-Pro-Moment-Case-Blue.jpg.webp"
-                      alt="iPhone 12 Pro Moment Case-Blue"
-                  /></a>
-                  <ul class="menu-hover">
-                    <li class="menu-item">
-                      <a href="" class="menu-link"
-                        ><i class="fa-solid fa-shuffle"></i
-                      ></a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="" class="menu-link"
-                        ><i class="fa-solid fa-magnifying-glass"></i
-                      ></a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="" class="menu-link"
-                        ><i class="fa-regular fa-heart"></i
-                      ></a>
-                    </li>
-                  </ul>
-                  <a href="">
-                    <div class="btn-cart">Add to Cart</div>
-                  </a>
-                </div>
-                <div class="product-info">
-                  <h3 class="product-name">
-                    <a href="">iPhone 12 Pro Moment Case – Blue</a>
-                  </h3>
-                  <span class="product-category"
-                    ><a href="">IPhone 12 pro</a></span
-                  >
-                  <span class="product-price">$149.00</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="product-item">
-                <div class="product-hover">
-                  <a href="">
-                    <img
-                      class="product-img"
-                      src="./img/Full-Aquarelle-iPhone-XR.jpg.webp"
-                      alt="Full Aquarelle iPhone XR"
-                    />
-                  </a>
-                  <ul class="menu-hover">
-                    <li class="menu-item">
-                      <a href="" class="menu-link"
-                        ><i class="fa-solid fa-shuffle"></i
-                      ></a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="" class="menu-link"
-                        ><i class="fa-solid fa-magnifying-glass"></i
-                      ></a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="" class="menu-link"
-                        ><i class="fa-regular fa-heart"></i
-                      ></a>
-                    </li>
-                  </ul>
-                  <a href="">
-                    <div class="btn-cart">Add to Cart</div>
-                  </a>
-                </div>
-                <div class="product-info">
-                  <h3 class="product-name">
-                    <a href="">Full Aquarelle iPhone XR</a>
-                  </h3>
-                  <span class="product-category"><a href="">IPhone XR</a></span>
-                  <span class="product-price">$169.00</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="product-item">
-                <div class="product-hover">
-                  <a href="">
-                    <img
-                      class="product-img"
-                      src="./img/Leather-Case-iPhone-12-Deep-Violet.jpg.webp"
-                      alt="Leather Case iPhone 12 Deep Violet"
-                    />
-                  </a>
-                  <ul class="menu-hover">
-                    <li class="menu-item">
-                      <a href="" class="menu-link"
-                        ><i class="fa-solid fa-shuffle"></i
-                      ></a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="" class="menu-link"
-                        ><i class="fa-solid fa-magnifying-glass"></i
-                      ></a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="" class="menu-link"
-                        ><i class="fa-regular fa-heart"></i
-                      ></a>
-                    </li>
-                  </ul>
-                  <a href="">
-                    <div class="btn-cart">Add to Cart</div>
-                  </a>
-                </div>
-                <div class="product-info">
-                  <h3 class="product-name">
-                    <a href="">Leather Case iPhone 12 Deep Violet</a>
-                  </h3>
-                  <span class="product-category"><a href="">IPhone 12</a></span>
-                  <span class="product-price">$230.00</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="product-item">
-                <div class="product-hover">
-                  <a href="">
-                    <img
-                      class="product-img"
-                      src="./img/iPhone-13-Case-Luxe-Dusty-Pink.jpg.webp"
-                      alt="iPhone 13 Case Luxe-Dusty Pink"
-                    />
-                  </a>
-                  <ul class="menu-hover">
-                    <li class="menu-item">
-                      <a href="" class="menu-link"
-                        ><i class="fa-solid fa-shuffle"></i
-                      ></a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="" class="menu-link"
-                        ><i class="fa-solid fa-magnifying-glass"></i
-                      ></a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="" class="menu-link"
-                        ><i class="fa-regular fa-heart"></i
-                      ></a>
-                    </li>
-                  </ul>
-                  <a href="">
-                    <div class="btn-cart">Add to Cart</div>
-                  </a>
-                </div>
-                <div class="product-info">
-                  <h3 class="product-name">
-                    <a href="">iPhone 13 Case Luxe – Dusty Pink</a>
-                  </h3>
-                  <span class="product-category"><a href="">IPhone 13</a></span>
-                  <span class="product-price">$149.00</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="product-item">
-                <div class="product-hover">
-                  <a href="">
-                    <img
-                      class="product-img"
-                      src="./img/iPhone-13-Case-Max-Black.jpg.webp"
-                      alt="iPhone 13 Case Max-Black"
-                    />
-                  </a>
-                  <ul class="menu-hover">
-                    <li class="menu-item">
-                      <a href="" class="menu-link"
-                        ><i class="fa-solid fa-shuffle"></i
-                      ></a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="" class="menu-link"
-                        ><i class="fa-solid fa-magnifying-glass"></i
-                      ></a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="" class="menu-link"
-                        ><i class="fa-regular fa-heart"></i
-                      ></a>
-                    </li>
-                  </ul>
-                  <a href="">
-                    <div class="btn-cart">Add to Cart</div>
-                  </a>
-                </div>
-                <div class="product-info">
-                  <h3 class="product-name">
-                    <a href="">iPhone 13 Case Max – Black</a>
-                  </h3>
-                  <span class="product-category"><a href="">IPhone 13</a></span>
-                  <span class="product-price">$159.00</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="product-item">
-                <div class="product-hover">
-                  <a href="">
-                    <img
-                      class="product-img"
-                      src="./img/iPhone-13-Case-With-MagSafe-Red-Rose.jpg.webp"
-                      alt="iPhone 13 Case With MagSafe-Red Rose"
-                    />
-                  </a>
-                  <ul class="menu-hover">
-                    <li class="menu-item">
-                      <a href="" class="menu-link"
-                        ><i class="fa-solid fa-shuffle"></i
-                      ></a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="" class="menu-link"
-                        ><i class="fa-solid fa-magnifying-glass"></i
-                      ></a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="" class="menu-link"
-                        ><i class="fa-regular fa-heart"></i
-                      ></a>
-                    </li>
-                  </ul>
-                  <a href="">
-                    <div class="btn-cart">Add to Cart</div>
-                  </a>
-                </div>
-                <div class="product-info">
-                  <h3 class="product-name">
-                    <a href="">iPhone 13 Case With MagSafe – Red Rose</a>
-                  </h3>
-                  <span class="product-category"><a href="">IPhone 13</a></span>
-                  <span class="product-price">$199.00</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="product-item">
-                <div class="product-hover">
-                  <a href="">
-                    <img
-                      class="product-img"
-                      src="./img/Epik-Silicone-Case-Full-Lavender.jpg.webp"
-                      alt="Epik Silicone Case Full-Lavender"
-                    />
-                  </a>
-                  <ul class="menu-hover">
-                    <li class="menu-item">
-                      <a href="" class="menu-link"
-                        ><i class="fa-solid fa-shuffle"></i
-                      ></a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="" class="menu-link"
-                        ><i class="fa-solid fa-magnifying-glass"></i
-                      ></a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="" class="menu-link"
-                        ><i class="fa-regular fa-heart"></i
-                      ></a>
-                    </li>
-                  </ul>
-                  <a href="">
-                    <div class="btn-cart">Add to Cart</div>
-                  </a>
-                </div>
-                <div class="product-info">
-                  <h3 class="product-name">
-                    <a href="">Epik Silicone Case Full – Lavender</a>
-                  </h3>
-                  <span class="product-category"><a href="">IPhone 12</a></span>
-                  <span class="product-price">$99.00</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="product-item">
-                <div class="product-hover">
-                  <a href="">
-                    <img
-                      class="product-img"
-                      src="./img/iPhone-12-Pro-Max-Silicone-BlackWhite.jpg.webp"
-                      alt="iPhone 12 Pro Max Silicone-Black/White"
-                    />
-                  </a>
-                  <ul class="menu-hover">
-                    <li class="menu-item">
-                      <a href="" class="menu-link"
-                        ><i class="fa-solid fa-shuffle"></i
-                      ></a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="" class="menu-link"
-                        ><i class="fa-solid fa-magnifying-glass"></i
-                      ></a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="" class="menu-link"
-                        ><i class="fa-regular fa-heart"></i
-                      ></a>
-                    </li>
-                  </ul>
-                  <a href="">
-                    <div class="btn-cart">Add to Cart</div>
-                  </a>
-                </div>
-                <div class="product-info">
-                  <h3 class="product-name">
-                    <a href="">iPhone 12 Pro Max Silicone – Black/White</a>
-                  </h3>
-                  <span class="product-category"
-                    ><a href="">IPhone 12 pro</a></span
-                  >
-                  <span class="product-price">$99.00</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End new-product -->
-      <!-- Begin quality -->
-      <section class="quality">
-        <div class="container">
-          <div class="row">
-            <div class="factors">
-              <div class="provide-high-quality">
-                <div class="sub-title">There are some redeeming factors</div>
-                <h4 class="title-container">We Provide High Quality Goods</h4>
-                <div class="sub_title-after-sub_title">
-                  A client that's unhappy for a reason is a problem, a client
-                  that's unhappy though he or her can't
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="info-box">
-                <div class="box-info-wrapper">
-                  <div class="box-icon">
-                    <img
-                      class="info-svg-wrapper"
-                      src="./img/infobox-1.svg"
-                      alt="infobox-1"
-                    />
-                  </div>
-                </div>
-                <div class="box-info-content">
-                  <h4 class="info-box-title">Fast Delivery</h4>
-                  <div class="title-after-title">
-                    <p
-                      style="color: #858585; font-size: 15px; font-weight: 450"
-                    >
-                      Chances are there wasn't collaboration and checkpoints,
-                      there wasn't a process.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="info-box">
-                <div class="box-info-wrapper">
-                  <div class="box-icon">
-                    <img
-                      class="info-svg-wrapper"
-                      src="./img/infobox-2.svg"
-                      alt="infobox-1"
-                    />
-                  </div>
-                </div>
-                <div class="box-info-content">
-                  <h4 class="info-box-title">Best Quality</h4>
-                  <div class="title-after-title">
-                    <p
-                      style="color: #858585; font-size: 15px; font-weight: 450"
-                    >
-                      It's content strategy gone awry right from the start.
-                      Forswearing the use of Lorem Ipsum.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="info-box">
-                <div class="box-info-wrapper">
-                  <div class="box-icon">
-                    <img
-                      class="info-svg-wrapper"
-                      src="./img/infobox-3.svg"
-                      alt="infobox-1"
-                    />
-                  </div>
-                </div>
-                <div class="box-info-content">
-                  <h4 class="info-box-title">Free Return</h4>
-                  <div class="title-after-title">
-                    <p
-                      style="color: #858585; font-size: 15px; font-weight: 450"
-                    >
-                      True enough, but that's not all that it takes to get
-                      things back on track out there for a text.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End quality -->
+        </section>
+        <!-- End quality -->
     </div>
     <!-- End wrapper -->
-    <!-- Begin Cart -->
-    <div class="cart-tab">
-      <div class="cart-heading">
-        <span class="title">Shopping cart</span>
-        <div class="closetab">
-          <a href="#" rel="nofollow">
-            <i class="fa-solid fa-xmark"></i> Close
-          </a>
-          <div class="cart-woocomercee">
-            <div class="cart-content">
-              <div class="scroll-content">
-                <div class="emty-mini-cart">
-                  <i class="fa-light fa-cart-xmark"></i>
-                  <p class="cart-message">No product in cart</p>
-                  <a href="#" class="cart-backward">Return To Shop</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- Begin foter -->
     <footer class="footer">
       <div class="container">

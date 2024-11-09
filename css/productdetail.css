@@ -1,0 +1,18 @@
+.breadcrumb a {
+  color: #000; /* Màu của liên kết */
+  text-decoration: none;
+  margin-inline: 8px;
+}
+
+.breadcrumb span {
+  font-weight: bold; /* In đậm phần cuối */
+}
+
+.breadcrumb a::after {
+  content: " / ";
+  color: #999; /* Màu của dấu gạch chéo */
+}
+
+.breadcrumb a:last-child::after {
+  content: ""; /* Bỏ dấu gạch chéo sau phần cuối */
+}
